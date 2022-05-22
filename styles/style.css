@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(/images/bg-pattern-desktop.svg);
+  background-size: cover;
+}
+
+body {
+  display: grid;
+  gap: 1em;
+  grid-template-areas: 'logo picture' 'section  picture' 'section  picture' 'section  picture';
+}
+
+header {
+  grid-area: logo;
+  margin: 3em 0em 0em 11em;
+}
+
+aside {
+  grid-area: picture;
+}
+
+aside img {
+  max-height: 100vh;
+}
+
+section {
+  grid-area: section;
+  grid-row: span;
+  margin: 2em 0em 0em 11em;
+}
+
+section h1 {
+  padding-bottom: 1.5em;
+  font-size: 3em;
+}
+
+section p {
+  padding-bottom: 1.5em;
+  font-size: smaller;
+}
+
+section div #email::placeholder {
+  text-indent: 20px;
+}
+
+section div #email {
+  width: 22em;
+  height: 4em;
+  border: 2px solid rgba(255, 192, 203, 0.7);
+  border-radius: 2em;
+}
+
+section div .button {
+  height: 2.8em;
+  width: 4em;
+  background-image: linear-gradient(rgba(235, 201, 206, 0.7), rgba(255, 192, 203, 0.7));
+  border: none;
+  border-radius: 3em;
+  position: relative;
+  top: 1px;
+  right: 78px;
+}
+
+section div .button:hover {
+  background-image: linear-gradient(#ebc9ce, pink);
+}
+
+section div .button[value] {
+  color: white;
+  font-size: 18px;
+  padding: none;
+  font-weight: bolder;
+}
+
+p {
+  text-transform: lowercase;
+}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Reem+Kufi:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -38,31 +40,47 @@ section{
     grid-area: section;
     grid-row: span;
     margin: 2em 0em 0em 11em;
+   
     h1{
-        padding-bottom: 1.5em;
-        font-size: 3em;
+        padding-bottom: .5em;
+        font-size: 3.8em;
+        font-family: Reem Kufi;
+        font-weight: lighter;
+        line-height: 60px;
+        width: min-content;
+        span{
+            color: pink;
+            font-weight: 100;
+            font-family: Alegreya sans;
+        }
     }
     p{
+        text-transform: lowercase;
         padding-bottom: 1.5em;
         font-size: smaller;
+        width: min(360px, 450px );
+        text-align: left;
+        font-family: Reem Kufi;
+        color: rgba(245, 35, 70, .7);
+        
     }
-    div{
+    div {   
+        
+        margin-top: 1em;
         
         #email::placeholder{
-            
-        
-            text-indent: 20px;
+             text-indent: 20px;
         }
       
 
         #email{
-            width: 22em;
+            width: 26em;
             height: 4em;
             border: 2px solid rgba(255, 192, 203, .7);
             border-radius: 2em;
         }
         .button{
-            // border: none;
+            border: none;
             height: 2.8em;
             width: 4em;
             background-image: linear-gradient(rgba(235, 201, 206, .7), rgba(255, 192, 203, .7));
@@ -84,17 +102,16 @@ section{
             padding: none;
             font-weight: bolder;
             
+            
         }
+       
+        
+        
     }
 
 }
 
 
-
-p{
-    
-    text-transform: lowercase;
-}
 
 
 
